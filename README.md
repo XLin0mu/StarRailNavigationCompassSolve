@@ -19,8 +19,17 @@ Auto Solve Star Rail's Navigation Compass
 
 ```julia
 julia> using Main.sjlp三阶罗盘
-julia> solve(;B=[0, 2, 4], M=[-2, 1, 4], L=[Ls.L_110;; Ls.L_101;; Ls.L_011])
+julia> solve(;B=[0, 2, 4], M=[-2, 1, 4], L=[Ls.L110;; Ls.L101;; Ls.L011])
 ([4, 2, 0], [1, 2, 3])
+```
+
+## 使用例2
+
+![使用例2](https://github.com/Xlin0mu/StarRailNavigationCompassSolve/blob/main/使用例2.png)
+
+```julia
+julia> solve(;B=[2, 4, 4], M=[2, 4, 2], L=[Ls.L100;; Ls.L010;; Ls.L001])
+([2, 2, 1],)
 ```
 
 ## 补充说明
@@ -28,3 +37,4 @@ julia> solve(;B=[0, 2, 4], M=[-2, 1, 4], L=[Ls.L_110;; Ls.L_101;; Ls.L_011])
 ![T1](https://github.com/Xlin0mu/StarRailNavigationCompassSolve/blob/main/T1.png)
 
 ![T2](https://github.com/Xlin0mu/StarRailNavigationCompassSolve/blob/main/T2.png)
+
